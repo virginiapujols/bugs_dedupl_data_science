@@ -5,12 +5,13 @@ from nltk.corpus import wordnet
 import xml.etree.ElementTree as ET
 from src.BugReport import BugReport
 
+
 lemmatizer = WordNetLemmatizer()
 tokenizer = TweetTokenizer()
 
 
 def stop_words_list():
-    with open('data/stop_words.txt', 'r') as file:
+    with open('data/stop-words.txt', 'r') as file:
         return file.read().splitlines()
 
 
